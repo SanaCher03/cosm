@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Hotel - Japanese Luxury in Tokyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="#about">About Us</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            
+            <!-- Logo -->
+           <h1 class="logo"><a href= "task1_2.html" class="logo-link">Sakura</a></h1>
+            
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="lang-switcher">
+                    <span class="lang-btn">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button class="book-btn">Book</button>
+            </div>
+            
+            <button class="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#about">About Us</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact Us</a>
+            <button class="book-btn">Book Now</button>
+            <div class="lang-switcher">
+                <button class="lang-btn">EN</button>
+                <i class="fas fa-globe"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="booking-form">
+                <h2>Experience Japanese Elegance</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="room-type">
+                                <option value="" disabled selected>Select Room</option>
+                                <option value="standard">Standard Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="suite">Suite</option>
+                                <option value="tatami">Traditional Tatami Room</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="arrival" placeholder="Arrival Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="departure" placeholder="Departure Date">
+                        </div>
+                    </div>
+                    <button type="submit" class="hero-btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Welcome to Sakura Hotel, a serene oasis in the heart of Tokyo where traditional Japanese hospitality meets modern luxury. Established in 1997, our hotel has been a sanctuary for travelers seeking an authentic cultural experience combined with world-class amenities.</p>
+<p>Our architecture reflects the elegance of Japanese design, featuring serene Zen gardens, tatami mat rooms, and panoramic views of the Tokyo skyline. Each of our 120 rooms is meticulously designed to provide comfort while honoring Japanese aesthetics.</p>
+                <p>At Sakura Hotel, we pride ourselves on our "omotenashi" (Japanese hospitality) philosophy, ensuring every guest feels the warmth and attention to detail that defines Japanese service excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events">
+        <div class="section-container">
+            <h2 class="section-title">Our Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/tea.webp" alt="Tea Ceremony">
+                        <div class="event-date">May 15</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Traditional Tea Ceremony</h3>
+                        <p>Experience the art of chanoyu in our authentic tea room with a master practitioner.</p>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/sushi2.jpg" alt="Sushi Making">
+                        <div class="event-date">June 2</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Sushi Masterclass</h3>
+                        <p>Join our Michelin-starred chef for an exclusive sushi-making workshop.</p>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/hanami.jpg" alt="Hanami Party">
+                        <div class="event-date">April 5</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Hanami Celebration</h3>
+                        <p>Celebrate cherry blossom season with our special hanami party in our rooftop garden.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="#" class="book-btn">Book an Event</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <h2 class="section-title">Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="surname" placeholder="Surname*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="city" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="country" placeholder="Country">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email*" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                </div>
+                <div class="center-btn">
+                    <button type="submit" class="hero-btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Sakura</div>
+            
+            <div class="footer-desktop">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Reservations</h4>
+                        <ul>
+                            <li><a href="#">Request an invoice</a></li>
+                            <li><a href="#">Find a reservation</a></li>
+                            <li><a href="#">Email Preferences</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>News</h4>
+                        <ul>
+                            <li><a href="#">Press Room</a></li>
+                            <li><a href="#">New Openings</a></li>
+                            <li><a href="#">Magazine</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="#">Legal Notice</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <p class="copyright">© Sakura Hotel 1997-2023. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-mobile">
+                <p>© Sakura Hotel 1997-2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
